@@ -20,10 +20,6 @@ import numpy as np
 if hasattr(__builtins__, 'raw_input'):
       input=raw_input
 
-import sys
-sys.path.append("../..")
-import threading
-
 import os
 import tobiiglasses.entities as entities
 from tobiiglasses.recordings import Recording
@@ -39,4 +35,4 @@ parser.add_argument('recording_id', metavar='recording_id', type=str, nargs='+',
 args = parser.parse_args()
 
 rec = Recording(args.projects_dir[0], args.project_id[0], args.recording_id[0])
-rec.play(segment_id=1)
+rec.replay(segment_id=1)
