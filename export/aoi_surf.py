@@ -20,7 +20,7 @@ import argparse
 from tobiiglasses.recordings import Recording
 from tobiiglasses.filters.fixations import FilterDT
 from tobiiglasses.filters.df import BetweenTimestamps, BetweenLoggedEvents
-from tobiiglasses.aoi.clustering import GaussianMixture
+from tobiiglasses.aoi.surf import SURF
 
 parser = argparse.ArgumentParser()
 parser.add_argument('projects_dir', metavar='projects_dir', type=str, nargs='+',
@@ -32,4 +32,4 @@ parser.add_argument('recording_id', metavar='recording_id', type=str, nargs='+',
 args = parser.parse_args()
 
 rec = Recording(args.projects_dir[0], args.project_id[0], args.recording_id[0])
-rec.exportCSV_Fixations(fixation_filter=FilterDT(), aoi_model=GaussianMixture(n_clusters=2), aoi_plot=True)
+rec.exportCSV_Fixations(fixation_filter=FilterDT(), aoi_model=SURF(), aoi_plot=True)
