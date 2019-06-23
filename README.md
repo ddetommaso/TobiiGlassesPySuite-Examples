@@ -1,1 +1,4 @@
-# tobiiglasses-pysuite-examples
+# TobiiGlassesPySuite Examples
+
+## Requirements
+tobiiglassespysuite installed
