@@ -17,7 +17,7 @@ pip install tobiiglasses
 
 ## Getting started
 ```
-git clone https://github.com/ddetommaso/TobiiGlassesPySuite-examples.git
+git clone --recursive https://github.com/ddetommaso/TobiiGlassesPySuite-examples.git
 cd TobiiGlassesPySuite-examples
 ```
 
