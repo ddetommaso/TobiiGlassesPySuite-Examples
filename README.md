@@ -31,4 +31,20 @@ python connect.py
 [DEBUG]: Tobii Pro Glasses 2 successful connected!
 ```
 
+# How to get project ids?
+A simple Python script showing how to get project ids of recordings from a
+path. Please notice that <path> is the folder where projects.ttgp is located.
 
+```
+cd TobiiGlassesPySuite-examples/info
+python get_projects.py <path>
+```
+
+# How to get recordings ids?
+A simple Python script showing how to get recording ids from a path and
+providing a project id.
+
+```
+cd TobiiGlassesPySuite-examples/info
+python get_recordings.py <path> <project_id>
+```
