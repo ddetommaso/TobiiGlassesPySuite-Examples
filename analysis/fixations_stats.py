@@ -18,7 +18,7 @@ import argparse
 from tobiiglasses.recordings import Recording
 from tobiiglasses.filters.fixations import FilterDT
 from tobiiglasses.metrics import Fixations_Metrics
-from tobiiglasses.aoi.models import GaussianMixture
+from tobiiglasses.aoi.clustering import GaussianMixture
 
 parser = argparse.ArgumentParser()
 parser.add_argument('projects_dir', metavar='projects_dir', type=str, nargs='+',

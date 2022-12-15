@@ -19,7 +19,7 @@ import argparse
 from tobiiglasses.recordings import Recording
 from tobiiglasses.filters.fixations import FilterDT
 from tobiiglasses.filters.df import BetweenTimestamps, BetweenLoggedEvents
-from tobiiglasses.aoi.models import GaussianMixture
+from tobiiglasses.aoi.clustering import GaussianMixture
 
 import os
 import csv
@@ -27,7 +27,7 @@ import pandas as pd
 import logging
 import argparse
 from tobiiglasses.gazedata import GazeData
-from tobiiglasses.aoi.models import GaussianMixture, DBSCAN
+from tobiiglasses.aoi.clustering import GaussianMixture, DBSCAN
 from tobiiglasses.filters.df import SingleLoggedEvent
 
 
